@@ -14,6 +14,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .hero {
   font-family: var(--primary-font);
   font-weight: 100;
@@ -40,13 +41,32 @@ nav {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(/images/background.jpg);
-  background-size: 1000px;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 200px 0;
   color: #e8b7cc;
   text-align: center;
+  animation: headerMove 25s ease-in-out infinite;
+
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes headerMove {
+  0% {
+    background-position: center;
+    background-size: cover;
+  }
+  50% {
+    background-position: center top;
+    background-size: 120%;
+  }
+  100% {
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 header h1 {
@@ -106,4 +126,20 @@ header a {
   display: inline-block;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+    animation: none;
+  }
+
+  header img {
+    width: 100%;
+  }
+}
+
+.best-seller {
+  background: black;
+  color: white;
 }
