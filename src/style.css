@@ -1,0 +1,109 @@
+:root {
+  --primary-font: "inter", sans-serif;
+  --secondary-font: "Playfair Display SC", serif;
+  --primary-color: #e8b7cc;
+  --secondary-color: #8e7b75;
+}
+
+body {
+  background: white;
+  font-family: var(--primary-font);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hero {
+  font-family: var(--primary-font);
+  font-weight: 100;
+  color: #e8b7cc;
+  background: #8e7b75;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  padding: 80px 20px;
+  margin-left: 15px;
+  line-height: 42px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav {
+  padding: 20px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(/images/background.jpg);
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  color: #e8b7cc;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 106px;
+  font-family: var(--secondary-font);
+  font-weight: 300;
+}
+
+header h2 {
+  font-size: 35px;
+  font-weight: 100;
+  font-family: var(--primary-font);
+}
+
+.btn {
+  display: block;
+  color: var(--primary-color);
+  border: 1px solid #e8b7cc;
+  background: #8e7b75;
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.btn-branding {
+  background: black;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-brand {
+  background: white;
+  border: 1px solid black;
+  color: black;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  text-decoration: none;
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
