@@ -34,10 +34,6 @@ nav li {
   max-width: 100px;
 }
 
-nav {
-  padding: 20px;
-}
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(/images/background.jpg);
@@ -94,25 +90,6 @@ header h2 {
   line-height: 1.5;
 }
 
-.btn-branding {
-  background: black;
-  color: white;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
-
-.btn-brand {
-  background: white;
-  border: 1px solid black;
-  color: black;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
-
 header a {
   font-weight: 700;
   font-size: 14px;
@@ -120,6 +97,21 @@ header a {
   color: var(--primary-color);
   text-decoration: none;
   background: var(--secondary-color);
+  text-align: center;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.card a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+  text-decoration: none;
+  background: var(--primary-color);
   text-align: center;
   padding: 16px 32px;
   margin-top: 32px;
@@ -182,6 +174,35 @@ header a {
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+
+section .salon {
+  margin: 90px;
+  text-align: center;
+}
+
+.hero-2 {
+  color: var(--primary-color);
+  background: black;
+}
+
+.hero-2 h1 {
+  font-family: var(--secondary-font);
+  font-size: 44px;
+  font-weight: light;
+  line-height: 1.5;
+}
+
+.hero-2 h2 {
+  font-family: var(--primary-font);
+  font-size: 44px;
+  font-weight: light;
+  line-height: 1.5;
+}
+
+.grid-image {
+  width: 100%;
+  max-width: 500px;
 }
 
 @media (max-width: 900px) {
